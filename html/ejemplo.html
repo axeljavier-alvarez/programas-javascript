@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo JS</title>
+    <script src="js/ejemplo.js"></script>
+    <!-- FUNCIONES CON CAMMEL CASE PARA MOSTRAR MENSAJE -->
+    <script>
+        function mostrarMensaje(){
+            document.getElementById("mensaje").innerHTML="Funcion <br> mostrar mensaje ";
+        }
+        function hacerClic(){
+            document.getElementById("mensaje").innerHTML="Clic en el boton";
+        }
+        function hacerClicBotonSuma(){
+            document.getElementById("mensaje").innerHTML = "La suma de 25 + 50 es: " + (25 + 50);
+        }
+        function hacerClicBotonDivision(){
+            document.getElementById("mensaje").innerHTML = "La division de (25+50) /5 es: " + (25 + 50)/5;
+        }
+        </script>
+</head>
+
+<body>
+    <header>
+        <h1>
+            Ejemplo JavaScript (JS)
+        </h1>
+    </header>
+    <main>
+        <p id="mensaje"></p>
+        <script>
+            document.getElementById("mensaje").innerHTML = "hola mundo";
+            console.log("Estoy en consola");
+            alert("Hola, esto es una alerta: " + 10*5);
+            /*  LLAMAR A UNA FUNCIÓN O MÉTODO */
+            mostrarMensaje();
+        </script>
+        <button onclick="hacerClic()">
+            Ejecutar funcion
+        </button>
+        <button onclick="hacerClicBotonSuma()">
+            Suma
+        </button>
+        <button onclick="hacerClicBotonDivision()">
+            Division
+        </button>
+        <button onclick="botonTres()">
+            Ejecutar metodo 3
+        </button>
+    </main>
+</body>
+</html>

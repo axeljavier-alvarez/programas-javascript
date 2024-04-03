@@ -1,0 +1,9 @@
+.form-control{
+    width: 50%;
+    margin: auto;
+}
+
+.btn{
+    width: 20%;
+    border-radius: 10px 10px 10px 10px;
+}
