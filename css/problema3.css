@@ -1,0 +1,15 @@
+.form-control{
+    width: 50%;
+    margin: auto;
+}
+
+.form-select {
+    width: 50%;
+    margin: auto;
+}
+
+p{
+    text-align: center;
+    font-weight: bold;
+    color: darkblue;
+}

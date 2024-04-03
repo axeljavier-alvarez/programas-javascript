@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solicitud de datos</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/problema2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/problema3.css">
 </head>
 
 <body>
@@ -16,37 +18,79 @@
 
         <header>
             <center>
-                <h1>Calculo de hipotenusa de un triangulo</h1>
+                <h1>Ingrese sus datos</h1>
             </center>
         </header>
 
         <main>
             <form>
-                <center>
-                    <img src="https://www.neurochispas.com/wp-content/uploads/2021/03/formula-para-calcular-la-hipotenusa-de-un-triangulo-rectangulo.png" width="400px">
-                </center>
                 <div class="mb-3">
-                    <label for="cateto_adyacente" class="form-label"></label>
-                    <input type="number" class="form-control" id="cateto_adyacente" placeholder="Ingrese el valor del cateto A">
+                    <label for="nombre" class="form-label"></label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
                 </div>
+
                 <div class="mb-3">
-                    <label for="cateto_opuesto" class="form-label"></label>
-                    <input type="number" class="form-control" id="cateto_opuesto" placeholder="Ingrese el valor del cateto B">
+                    <label for="materia" class="form-label"></label>
+                    <select class="form-select" id="materia">
+                        <option value="materia">Selecciona una materia</option>
+                        <option value="Fisica fundamental">Física Fundamental</option>
+                        <option value="Ciencias Naturales">Ciencias Naturales</option>
+                        <option value="Ciencias Sociales">Ciencias Sociales</option>
+                        <option value="Emprendimiento">Emprendimiento</option>
+                        <option value="Educacion Fisica">Educación Física</option>
+                    </select>
                 </div>
                 <br>
                 <div class="mb-3">
+                    <p>Ingrese la primer nota</p> 
+                    <select id="nota1" class="form-select"></select>
+                </div>
+
+                <div class="mb-3">
+                    <p>Ingrese la segunda nota</p>
+                    <select id="nota2" class="form-select"></select>
+                </div>
+
+                
+                <div class="mb-3">
+                    <p>Ingrese la tercera nota</p>
+                    <select id="nota3" class="form-select"></select>
+                </div>
+
+                
+                <div class="mb-3">
+                    <p>Ingrese la cuarta nota</p>
+                    <select id="nota4" class="form-select"></select>
+                </div>
+
+                <div class="mb-3">
+                    <p>Ingrese la quinta nota</p>
+                    <select id="nota5" class="form-select"></select>
+                </div>
+
+                <br>
+                <div class="mb-3">
                     <center>
-                        <button type="button" onclick="calcularHipotenusa()" class="btn btn-success form-control">Calcular</button>
+                        <button type="submit" onclick="promedio()" class="btn btn-success form-control">Mostrar Datos</button>
                     </center>
                 </div>
             </form>
-        </main> 
-<br>
+            <br>
+            <br>
+
+            <p id="resultado">
+                Resultado: 
+            </p>
+        </main>
+        <br>
         <center>
-            <div id="resultado"></div>  
+            <div id="resultado"></div>
         </center>
-    </div>   
+    </div>
     <script src="../js/problema3.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

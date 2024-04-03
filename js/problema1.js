@@ -25,6 +25,7 @@
 const formulario = document.querySelector('form');
 
 formulario.addEventListener('submit', (event)=>{
+    
     event.preventDefault();
     const carnet = event.target.elements['carnet'].value;
     const nombre = event.target.elements['nombre'].value;

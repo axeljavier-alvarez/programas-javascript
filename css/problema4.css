@@ -1,0 +1,18 @@
+h1{
+    text-align: center;
+    color:darkblue;
+}
+
+.form-control{
+    width: 30%;
+    margin: auto;
+}
+
+.form-select {
+    width: 30%;
+    margin: auto;
+}
+
+label {
+    text-align: center;
+}

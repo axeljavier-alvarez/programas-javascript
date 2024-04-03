@@ -24,7 +24,7 @@ function restar(){
     /* parseInt convierte un texto a enteros (sin decimal) */
     obtenerValores();
      operacion
-     = valor1 -+ valor2;
+     = valor1 - valor2;
     document.getElementById("resultado").innerHTML = 
     "La resta es: " + operacion;
 }
