@@ -22,15 +22,28 @@
         <header>
                 <h1>Indicar si un número es positivo, negativo o neutro</h1>
         </header>
+<br>
+<br>
+<main>
+  <div class="row justify-content-center">
+    <div class="col-4">
 
-        <main>
-            <form>
-                <div class="mb-3">
-                    <label for="numero" class="form-label">Introduzca un número:</label>
-                    <input type="number" class="form-control" id="numero">
-                </div>
-            </form>
-        </main>
+    <form class="border p-5">
+      <div class="mb-3">
+        <label for="numero" class="form-label">Introduzca un número</label>
+        <input type="number" class="form-control" id="numero">
+      </div>
+
+      <div class="mb-3">
+        <button type="button" onclick="calcular()" class="btn btn-primary form-control">Calcular</button>
+      </div>
+      
+      <p id="resultado"></p>
+    </form>
+   
+  </div>
+  </div>
+</main>
 
     </div>
     <script src="../js/problema4.js"></script>

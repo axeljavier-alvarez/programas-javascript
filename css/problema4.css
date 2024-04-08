@@ -3,15 +3,6 @@ h1{
     color:darkblue;
 }
 
-.form-control{
-    width: 30%;
-    margin: auto;
-}
-
-.form-select {
-    width: 30%;
-    margin: auto;
-}
 
 label {
     text-align: center;
