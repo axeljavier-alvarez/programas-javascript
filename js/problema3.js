@@ -79,6 +79,7 @@ function promedio(){
     /* parseInt convierte un texto a enteros (sin decimal) */
     obtenerValores();
      operacion = (nota1 + nota2 + nota3 + nota4 + nota5)/5;
+     // se mostrara el resultado
      document.getElementById("resultado").innerHTML = " El resultado es: " + operacion;
 }
 
@@ -95,4 +96,21 @@ formulario.addEventListener('submit', (event)=>{
 
 
 });
+
+function borrarDatos(){
+    if(!confirm("Esta seguro que desea borrar los datos")){
+        return;
+    }
+
+    document.getElementById('nombre').value = "";
+    document.getElementById('materia').value = "";
+    document.getElementById('nota1').value = "";
+    document.getElementById('nota2').value = "";
+    document.getElementById('nota3').value = "";
+    document.getElementById('nota4').value = "";
+    document.getElementById('nota5').value = "";
+
+    document.getElementById("resultado").innerHTML = "";
+
+}
 

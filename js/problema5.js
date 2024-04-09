@@ -27,3 +27,15 @@ function calcular(){
     const resultado = `El mayor es ${mayor}, el menor es ${menor} y el valor medio es ${medio}`;
     document.getElementById("resultado").innerHTML = resultado;
 }
+
+function borrarDatos(){
+
+    if(!confirm("Esta seguro que desea borrar los datos")){
+        return;
+    }
+    
+    document.getElementById("numero1").value = "";
+    document.getElementById("numero2").value = "";
+    document.getElementById("numero3").value = "";
+    document.getElementById("resultado").innerHTML = "";
+}

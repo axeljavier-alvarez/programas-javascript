@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <script src="../js/eventos.js"></script>
+
+    <style>
+        *{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+
+    <h1>Ejemplo de eventos con JS</h1>
+
+    <p id="eventoSeleccionado">
+
+    </p>
+
+
+    <p onclick="hacerClic()" ondblclick="hacerDobleClic">Clic aquí</p>
+    <p ondblclick="hacerDobleClic()">Doble clic</p>
+    <p onmousemove="moverMouse()">Mover el mouse</p>
+    <!-- DOS EVENTOS EN EL MISMO EVENTO -->
+    <h1 onmousedown="presionarBotonMouse()" onmouseup="soltarBotonMouse()">Presionar boton del mouse</h1>
+
+    <!-- THIS PARA DECIRLE QUE ESTOY AQUI-->
+    <div onclick="escribirAqui(this)">estoy aqui</div>
+
+    <h5 onclick="escribirAqui(this)">titulo 3</h5>
+
+
+    <!-- EVENTO PARA SUMAR, EL THIS HACE REFERENCIA AL ELEMENTO QUE ESTOY SELECCIONANDO PARA MOSTRAR EL RESULTADO -->
+    <h1>Suma</h1>
+    <input type="number" name="txtValor1" id="txtValor1">
+    <input type="number" name="txtValor2" id="txtValor2">
+
+    <section onmouseover="sumar
+    
+    (parseFloat(document.getElementById('txtValor1').value), 
+
+    parseFloat(document.getElementById('txtValor2').value),
+    this)">
+    <br>
+        Mostrar resultado de suma
+    </section>
+
+<br>    
+    <!-- EVENTO PARA QUE CUANDO SELECCIONE ENTER ME MUESTRE EL RESULTADO -->
+
+     <h1>Ingrese un texto</h1>
+        <input type="text" id="texto" onkeydown="mostrarTexto(event)"> 
+
+     <p id="resultado"></p>
+
+     <h1>Otra forma de hacer el evento</h1>
+     <input type="text" id="palabra" onkeydown="presionarEnter(event, this)">
+
+</body>
+</html>

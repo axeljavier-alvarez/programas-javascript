@@ -31,3 +31,16 @@ function calcularHipotenusa() {
 
     resultado.textContent = `La hipotenusa del triángulo es de ${hipotenusa.toFixed(2)} unidades.`;
   }
+
+
+  function borrarDatos(){
+    if(!confirm("Esta seguro que desea borrar los datos")){
+      return;
+    }
+
+    document.getElementById("cateto_adyacente").value = "";
+    document.getElementById("cateto_opuesto").value="";
+    document.getElementById("resultado").innerHTML="";
+
+    
+  }

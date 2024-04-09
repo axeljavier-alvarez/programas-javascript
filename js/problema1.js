@@ -38,3 +38,17 @@ formulario.addEventListener('submit', (event)=>{
 
 
 })
+
+
+function borrarDatos(){
+    
+    if(!confirm("Esta seguro que desea borrar los datos")){
+        return;
+    }
+
+    document.getElementById("carnet").value = "";
+    document.getElementById("nombre").value = "";
+    document.getElementById("datos").innerHTML = "";
+
+
+}
