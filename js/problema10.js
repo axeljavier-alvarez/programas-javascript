@@ -24,7 +24,7 @@ function contar(){
 
 
 function borrarDatos(){
-    document.getElementById("texto").value = "";
+    document.getElementById("parrafo").value = "";
     document.getElementById("palabra").value = "";
     document.getElementById("resultado").innerHTML = "";
 }
