@@ -16,3 +16,8 @@ function mostrar(){
     }
 
 }
+
+function borrarDatos(){
+    document.getElementById("numero").value = "";
+    document.getElementById("mostrar").innerHTML = "";
+}

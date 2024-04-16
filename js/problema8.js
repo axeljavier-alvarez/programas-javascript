@@ -28,3 +28,10 @@ function calcular(){
      console.log(`El Maximo común divisor de ${numero1} y ${numero2} es: ${mcd}`);
     
 }
+
+function borrarDatos(){
+    document.getElementById("numero1").value = "";
+    document.getElementById("numero2").value = "";
+    document.getElementById("resultado").innerHTML = "";
+
+}

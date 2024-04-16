@@ -80,7 +80,7 @@ function promedio(){
     obtenerValores();
      operacion = (nota1 + nota2 + nota3 + nota4 + nota5)/5;
      // se mostrara el resultado
-     document.getElementById("resultado").innerHTML = " El resultado es: " + operacion;
+     document.getElementById("resultado").innerHTML = " El promedio es: " + operacion;
 }
 
 formulario.addEventListener('submit', (event)=>{

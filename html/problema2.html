@@ -11,7 +11,7 @@
 <body>
     <div class="container">
 <br>
-        <div class="d-flex justify-content-end ">
+        <div class="d-flex justify-content-start ">
             <a href="../index.html">
                 <div class="btn-group btn-group-toggle " data-toggle="buttons">
                     <label class="btn btn-success active">
@@ -23,45 +23,64 @@
         <br>
         <br>
 
+        <br>
         <header>
             <center>
-                <h1>Calculo de hipotenusa de un triangulo</h1>
+                <h1>Cálculo de hipotenusa de un triangulo</h1>
             </center>
         </header>
 
+        <br>
+        <br>
+        <br>
         <main>
-            <form>
-                <center>
-                    <img src="https://www.neurochispas.com/wp-content/uploads/2021/03/formula-para-calcular-la-hipotenusa-de-un-triangulo-rectangulo.png" width="400px">
-                </center>
-                <div class="mb-3">
-                    <label for="cateto_adyacente" class="form-label"></label>
-                    <input type="number" class="form-control" id="cateto_adyacente" placeholder="Ingrese el valor del cateto A">
-                </div>
-                <div class="mb-3">
-                    <label for="cateto_opuesto" class="form-label"></label>
-                    <input type="number" class="form-control" id="cateto_opuesto" placeholder="Ingrese el valor del cateto B">
-                </div>
-                <br>
-                <div class="mb-3">
-                    <center>
-                        <button type="button" onclick="calcularHipotenusa()" class="btn btn-success form-control">Calcular</button>
-                    </center>
-                </div>
 
-                <div class="mb-3">
+            <div class="row justify-content-center">
+                <div class="col-5">
+                    <form class="border p-5 border-primary">
 
-                    <center>
-                        <button type="button" onclick="borrarDatos()" class="btn btn-danger form-control">Borrar Datos</button>
-                    </center>
+                        <div class="mb-3">
+                            <label for="cateto_adyacente" class="form-label"></label>
+                            <input type="number" class="form-control" id="cateto_adyacente" placeholder="Ingrese el valor del cateto A" autocomplete="off">
+                        </div>
+                        <div class="mb-3">
+                            <label for="cateto_opuesto" class="form-label"></label>
+                            <input type="number" class="form-control" id="cateto_opuesto" placeholder="Ingrese el valor del cateto B" autocomplete="off">
+                        </div>
+                        <br>
+                        <div class="mb-3">
+                            <center>
+                                <button type="button" onclick="calcularHipotenusa()" class="btn btn-primary form-control">Calcular</button>
+                            </center>
+                        </div>
+        
+                        <div class="mb-3">
+                            <center>
+                                <button type="button" onclick="borrarDatos()" class="btn btn-danger form-control">Borrar Datos</button>
+                            </center>
+                        </div>
+                    </form>
                 </div>
-            </form>
+            </div>
+            
         </main> 
+<br>
 <br>
         <center>
             <div id="resultado"></div>  
         </center>
     </div>   
+
+   
+    <br>
+    <br>
+    <footer>
+        <br>
+        Axel Javier Guadalupe Alvarez Felipe &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Carnet: 2023-023346
+
+    </footer>
+   
+
     <script src="../js/problema2.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

@@ -11,8 +11,8 @@
 <body>
     
     <div class="container">
-
-        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+<br>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
             <a href="../index.html">
               <button class="btn btn-success" type="button">Regresar</button>
             </a>
@@ -27,7 +27,7 @@
           <main>
             <div class="row justify-content-center">
                 <div class="col-4">
-                    <form class="border p-5">
+                    <form class="border p-5 border-primary">
 
                       <div class="mb-3">
                         <label for="filas" class="form-label">Ingrese el número de filas que desea:</label>
@@ -39,12 +39,18 @@
                       <label for="columnas" class="form-label">Ingrese el numero de columnas que desea:</label>
                       <input type="number" id="columnas" class="form-control" autocomplete="off">
                       </div>            
-
+<br>
                       <div class="mb-3">
-                        <button type="button" onclick="hacerLaTabla()" class="btn btn-primary form-control">
-                          Crear tabla
+                        <button type="button" onclick="hacerLaTabla()" class="btn btn-success form-control">
+                          Crear Tabla
                         </button>
-                      </div>                    
+                      </div>
+                      
+                      <div class="mb-3">
+                        <button type="button" onclick="borrarTabla()" class="btn btn-danger form-control">
+                         Borrar Datos
+                        </button>
+                      </div>   
                     </form>
                     <br>
                     <br>
@@ -57,7 +63,13 @@
 
     </div>
 
-
+    <br>
+    <br>
+        <footer>
+          <br>
+          Axel Javier Guadalupe Alvarez Felipe &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Carnet: 2023-023346
+        
+        </footer>
     <script src="../js/problema15.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

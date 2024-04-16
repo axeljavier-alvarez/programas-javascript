@@ -13,7 +13,7 @@
 <body>
     <div class="container">
 <br>
-        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
             <a href="../index.html">
                 <button class="btn btn-success" type="button">Regresar</button>
             </a>
@@ -27,68 +27,74 @@
             </center>
         </header>
 
+        <br>
         <main>
-            <form>
-                <div class="mb-3">
-                    <label for="nombre" class="form-label"></label>
-                    <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
-                </div>
 
-                <div class="mb-3">
-                    <label for="materia" class="form-label"></label>
-                    <select class="form-select" id="materia">
-                        <option value="materia">Selecciona una materia</option>
-                        <option value="Fisica fundamental">Física Fundamental</option>
-                        <option value="Ciencias Naturales">Ciencias Naturales</option>
-                        <option value="Ciencias Sociales">Ciencias Sociales</option>
-                        <option value="Emprendimiento">Emprendimiento</option>
-                        <option value="Educacion Fisica">Educación Física</option>
-                    </select>
+            <div class="row justify-content-center">
+                <div class="col-5">
+                    <form class="border p-5 border-primary">
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label"></label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre" autocomplete="off">
+                        </div>
+        
+                        <div class="mb-3">
+                            <label for="materia" class="form-label"></label>
+                            <select class="form-select" id="materia">
+                                <option value="materia">Selecciona una materia</option>
+                                <option value="Fisica fundamental">Física Fundamental</option>
+                                <option value="Ciencias Naturales">Ciencias Naturales</option>
+                                <option value="Ciencias Sociales">Ciencias Sociales</option>
+                                <option value="Emprendimiento">Emprendimiento</option>
+                                <option value="Educacion Fisica">Educación Física</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="mb-3">
+                            <p>Ingrese la primer nota</p> 
+                            <select id="nota1" class="form-select"></select>
+                        </div>
+        
+                        <div class="mb-3">
+                            <p>Ingrese la segunda nota</p>
+                            <select id="nota2" class="form-select"></select>
+                        </div>
+        
+                        
+                        <div class="mb-3">
+                            <p>Ingrese la tercera nota</p>
+                            <select id="nota3" class="form-select"></select>
+                        </div>
+        
+                        
+                        <div class="mb-3">
+                            <p>Ingrese la cuarta nota</p>
+                            <select id="nota4" class="form-select"></select>
+                        </div>
+        
+                        <div class="mb-3">
+                            <p>Ingrese la quinta nota</p>
+                            <select id="nota5" class="form-select"></select>
+                        </div>
+        
+                        <br>
+                        <div class="mb-3">
+                            <center>
+                                <button type="submit" onclick="promedio()" class="btn btn-outline-warning form-control">Mostrar Datos</button>
+                            </center>
+                        </div>
+        
+                        
+                        <div class="mb-3">
+                            <center>
+                                <button type="button" onclick="borrarDatos()" class="btn btn-outline-danger form-control">Borrar Datos</button>
+        
+                            </center>
+                        </div>
+                    </form>
                 </div>
-                <br>
-                <div class="mb-3">
-                    <p>Ingrese la primer nota</p> 
-                    <select id="nota1" class="form-select"></select>
-                </div>
-
-                <div class="mb-3">
-                    <p>Ingrese la segunda nota</p>
-                    <select id="nota2" class="form-select"></select>
-                </div>
-
-                
-                <div class="mb-3">
-                    <p>Ingrese la tercera nota</p>
-                    <select id="nota3" class="form-select"></select>
-                </div>
-
-                
-                <div class="mb-3">
-                    <p>Ingrese la cuarta nota</p>
-                    <select id="nota4" class="form-select"></select>
-                </div>
-
-                <div class="mb-3">
-                    <p>Ingrese la quinta nota</p>
-                    <select id="nota5" class="form-select"></select>
-                </div>
-
-                <br>
-                <div class="mb-3">
-                    <center>
-                        <button type="submit" onclick="promedio()" class="btn btn-success form-control">Mostrar Datos</button>
-                    </center>
-                </div>
-
-                
-                <div class="mb-3">
-                    <center>
-                        <button type="button" onclick="borrarDatos()" class="btn btn-danger form-control">Borrar Datos</button>
-
-                    </center>
-                </div>
-            </form>
-            <br>
+            </div>
+            
             <br>
 
             <p id="resultado"> 
@@ -96,6 +102,13 @@
         </main>
         <br>
     </div>
+
+    <br>
+    <footer>
+        <br>
+        Axel Javier Guadalupe Alvarez Felipe &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Carnet: 2023-023346
+
+    </footer>
     <script src="../js/problema3.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

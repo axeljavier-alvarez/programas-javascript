@@ -24,14 +24,13 @@ function contadorDeS(){
     // CREACION DE TABLA DONDE SE MOSTRARAN LOS RESULTADOS
     var tabla = "<table>";
     // primera fila
-    tabla += "<tr style='border: 1px solid black;'><th style='border: 1px solid black;'>" + "TEXTO" + "</th><th>" + "CANTIDAD" + "</th></tr>"
+    tabla += "<tr style='border: 1px solid white;'><th style='border: 1px solid white;'>" + "TEXTO" + "</th><th>" + "CANTIDAD" + "</th></tr>"
     // segunda fila
-    tabla += "<tr style='border: 1px solid black;'><td style='border: 1px solid black;'>" + txt1 + "</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + contador1 + "</td></tr>";
+    tabla += "<tr style='border: 1px solid white;'><td style='border: 1px solid white;'>" + txt1 + "</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + contador1 + "</td></tr>";
     // tercera fila
-    tabla += "<tr style='border: 1px solid black;'><td style='border: 1px solid black;'>" + txt2 + "</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + contador2 + "</td></tr>";
+    tabla += "<tr style='border: 1px solid white;'><td style='border: 1px solid white;'>" + txt2 + "</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + contador2 + "</td></tr>";
     // cuarta fila total
-    tabla += "<tr style='border: 1px solid black;'><td style='border: 1px solid black;'>" + "El total es: " + "&nbsp;&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + contadorGeneral + "</td></tr>";
-
+    tabla += "<tr style='border: 1px solid white;'><td style='border: 1px solid white;'>" + "El total es: " + "&nbsp;&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + contadorGeneral + "</td></tr>";
 
     // MOSTRAR EN HTML
     document.getElementById("resultado").innerHTML = tabla;
@@ -39,7 +38,7 @@ function contadorDeS(){
 
 
 // contar caracteres pares de una palabra
-/* function contarPares() {
+ function contarPares() {
    // Obtener los dos textos
   const texto1 = document.getElementById("texto1").value;
   const texto2 = document.getElementById("texto2").value;
@@ -60,20 +59,20 @@ function contadorDeS(){
 
   // Generar la tabla HTML
   let tablaHTML = "<table>";
-  tablaHTML += "<tr style='border: 1px solid black;'><th style='border: 1px solid black;'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Número</th><th style='border: 1px solid black;'>&nbsp;&nbsp;Letra</th></tr>";
+  tablaHTML += "<tr style='border: 1px solid white;'><th style='border: 1px solid white; '>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Número</th><th style='border: 1px solid white;'>&nbsp;&nbsp;Letra</th></tr>";
   for (let i = 0; i < letrasPares.length; i++) {
-    tablaHTML += `<tr style='border: 1px solid black;'><td style='border: 1px solid black;'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${i + 1}</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${letrasPares[i]}</td></tr>`;
+    tablaHTML += `<tr style='border: 1px solid white;'><td style='border: 1px solid white;'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${i + 1}</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${letrasPares[i]}</td></tr>`;
   }
-  tablaHTML += `<tr style='border: 1px solid black;'><td style='border: 1px solid black;' colspan="2">Total de letras pares: ${totalLetrasPares}</td></tr>`;
+  tablaHTML += `<tr style='border: 1px solid white;'><td style='border: 1px solid white;' colspan="2">Total de letras pares: ${totalLetrasPares}</td></tr>`;
   tablaHTML += "</table>";
 
   // Mostrar la tabla en el elemento "resultado"
   document.getElementById("resultado").innerHTML = tablaHTML;
   
-}*/
+}
 
 // CONTAR LOS CARACTERES PARES DE UNA PALABRA
-function contarPares(){
+/* function contarPares(){
     const palabra1 = document.getElementById("texto1").value;
     const palabra2 = document.getElementById("texto2").value;
 
@@ -88,7 +87,7 @@ function contarPares(){
     // concatenar todo en un array
     const letrasPares = pares1.concat(pares2);
 
-    // contar todas las letras pares
+    // contar todas las letras 
     const totalLetrasPares = letrasPares.length;
 
     // HACER LA TABLA MOSTRANDO LOS RESULTADOS
@@ -103,4 +102,4 @@ function contarPares(){
     
     // MOSTRAR EN EL HTML
     document.getElementById("resultado").innerHTML = tablaPares;
-}
+}*/
